@@ -1,3 +1,12 @@
-
+#menu-menu-1 {
+  list-style: none;
+  padding: 0;
+}
+#menu-menu-1 li {
+  margin-right: 1rem;
+}
+#menu-menu-1 a {
+  color: #6C757D;
+}
 
 /*# sourceMappingURL=custom.css.map */
