@@ -1,6 +1,7 @@
 <?php
 
 require_once get_template_directory () . '/inc/woocommerce-hooks.php';
+require_once get_template_directory () . '/inc/class-woostudy-menu-categories.php';
 
 
 function woostudy_setup ()
@@ -22,6 +23,7 @@ function woostudy_setup ()
 
     register_nav_menus ([
         'menu-1' => __('Top Menu', 'woostudy'),
+        'menu-2' => __('Categories Menu', 'woostudy'),
 
     ]);
 
