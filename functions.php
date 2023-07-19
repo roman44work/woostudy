@@ -1,5 +1,9 @@
 <?php
 
+function vardump($var) {
+  echo '<pre>' . print_r( $var, 1 ) . '</pre>';
+}
+
 require_once get_template_directory () . '/inc/woocommerce-hooks.php';
 require_once get_template_directory () . '/inc/class-woostudy-menu-categories.php';
 require_once get_template_directory () . '/inc/class-woostudy-menu-navbar.php';
