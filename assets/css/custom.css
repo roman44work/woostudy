@@ -18,4 +18,10 @@
   text-decoration: none;
 }
 
+.product-img .attachment-woocommerce_thumbnail {
+  max-width: 100%;
+  height: auto;
+  width: 100% !important;
+}
+
 /*# sourceMappingURL=custom.css.map */
