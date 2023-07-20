@@ -15,45 +15,60 @@
  * @version 4.7.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
+if ( !defined ('ABSPATH') ) {
+    exit;
 }
 ?>
+<div <?php wc_product_cat_class ('col-lg-3 col-md-4 col-sm-6 pb-1 category-list', $category); ?>>
+    <?php
+    /**
+     * The woocommerce_before_subcategory hook.
+     *
+     * @hooked woocommerce_template_loop_category_link_open - 10
+     */
+    do_action ('woocommerce_before_subcategory', $category);
+
+    ?>
+    <div class="cat-item d-flex align-items-center mb-4">
+        <div class="overflow-hidden" style="width: 100px; height: 100px;">
+            <?php
 
 
-<div <?php wc_product_cat_class( 'col-lg-3 col-md-4 col-sm-6 pb-1', $category ); ?>>
-	<?php
-	/**
-	 * The woocommerce_before_subcategory hook.
-	 *
-	 * @hooked woocommerce_template_loop_category_link_open - 10
-	 */
-	do_action( 'woocommerce_before_subcategory', $category );
+            /**
+             * The woocommerce_before_subcategory_title hook.
+             *
+             * @hooked woocommerce_subcategory_thumbnail - 10
+             */
+            do_action ('woocommerce_before_subcategory_title', $category);
 
-	/**
-	 * The woocommerce_before_subcategory_title hook.
-	 *
-	 * @hooked woocommerce_subcategory_thumbnail - 10
-	 */
-	do_action( 'woocommerce_before_subcategory_title', $category );
+            ?>
+        </div>
+        <div class="flex-fill pl-3">
+        <?php
 
-	/**
-	 * The woocommerce_shop_loop_subcategory_title hook.
-	 *
-	 * @hooked woocommerce_template_loop_category_title - 10
-	 */
-	do_action( 'woocommerce_shop_loop_subcategory_title', $category );
+        /**
+         * The woocommerce_shop_loop_subcategory_title hook.
+         *
+         * @hooked woocommerce_template_loop_category_title - 10
+         */
+        do_action ('woocommerce_shop_loop_subcategory_title', $category);
+        ?>
+        </div>
 
-	/**
-	 * The woocommerce_after_subcategory_title hook.
-	 */
-	do_action( 'woocommerce_after_subcategory_title', $category );
 
-	/**
-	 * The woocommerce_after_subcategory hook.
-	 *
-	 * @hooked woocommerce_template_loop_category_link_close - 10
-	 */
-	do_action( 'woocommerce_after_subcategory', $category );
-	?>
+        <?php
+        /**
+         * The woocommerce_after_subcategory_title hook.
+         */
+        do_action ('woocommerce_after_subcategory_title', $category);
+        ?>
+    </div>
+    <?php
+    /**
+     * The woocommerce_after_subcategory hook.
+     *
+     * @hooked woocommerce_template_loop_category_link_close - 10
+     */
+    do_action ('woocommerce_after_subcategory', $category);
+    ?>
 </div>

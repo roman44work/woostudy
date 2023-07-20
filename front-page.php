@@ -110,19 +110,19 @@
 
 
             ?>
-            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-                <a class="text-decoration-none" href="">
-                    <div class="cat-item d-flex align-items-center mb-4">
-                        <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                            <img class="img-fluid" src="<?php echo get_template_directory_uri () . '/assets/img' ?>/cat-1.jpg" alt="">
-                        </div>
-                        <div class="flex-fill pl-3">
-                            <h6>Category Name</h6>
-                            <small class="text-body">100 Products</small>
-                        </div>
-                    </div>
-                </a>
-            </div>
+<!--            <div class="col-lg-3 col-md-4 col-sm-6 pb-1">-->
+<!--                <a class="text-decoration-none" href="">-->
+<!--                    <div class="cat-item d-flex align-items-center mb-4">-->
+<!--                        <div class="overflow-hidden" style="width: 100px; height: 100px;">-->
+<!--                            <img class="img-fluid" src="--><?php //echo get_template_directory_uri () . '/assets/img' ?><!--/cat-1.jpg" alt="">-->
+<!--                        </div>-->
+<!--                        <div class="flex-fill pl-3">-->
+<!--                            <h6>Category Name</h6>-->
+<!--                            <small class="text-body">100 Products</small>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </a>-->
+<!--            </div>-->
         </div>
     </div>
     <!-- Categories End -->
